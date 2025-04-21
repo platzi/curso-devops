@@ -1,0 +1,6 @@
+@ContactosAPI_HostAddress = http://localhost:5044
+
+GET {{ContactosAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

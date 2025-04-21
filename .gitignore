@@ -2,8 +2,8 @@
 appsettings*.json
 
 # Archivos de compilación de .NET
-/bin/
-/obj/
+bin/
+obj/
 
 # Archivos de comiplación de Terraform
 *.tfstate
