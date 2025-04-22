@@ -58,7 +58,7 @@ variable "container_app_env_name" {
 }
 ```
 
-Y por último:
+Y por último **main.tf**.
 
 ```terraform
 resource "random_pet" "rg_name" {
@@ -70,12 +70,12 @@ resource "azurerm_resource_group" "rg" {
   location = var.resource_group_location
 }
 
-resource "azurerm_container_registry" "acr" {
-  name                = var.acr_name
-  resource_group_name = azurerm_resource_group.rg.name
+resource "azurerm_application_insights" "app_insights" {
+  name = "${var.resource_group_name_prefix}-ai"
   location            = azurerm_resource_group.rg.location
-  sku                 = "Standard"
-  admin_enabled       = true
+  resource_group_name = azurerm_resource_group.rg.name
+  application_type    = "web"
+  workspace_id       = azurerm_log_analytics_workspace.log_analytics.id
 }
 
 resource "azurerm_log_analytics_workspace" "log_analytics" {
