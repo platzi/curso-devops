@@ -5,6 +5,9 @@ on:
     branches:
       - main 
 
+env:
+  AZURE_MONITOR_CONNECTION_STRING: ${{ secrets.AZURE_MONITOR_KEY }}
+
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
