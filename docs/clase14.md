@@ -6,10 +6,10 @@ El formato de JSON que necesitas para tus credenciales es el siguiente:
 
 ```json
 {
-    "clientSecret":  "8Fb8Q~GjVXFAIFmQEJW0EUtQQkAYPH.NOdzYPdB3",
-    "subscriptionId":  "30a83aff-7a8b-4ca3-aa48-ab93268b5a8b",
-    "tenantId":  "0fe86da7-ca5d-4cc6-8c3c-a91b0c4b50ba",
-    "clientId":  "8d7f71a2-a600-4129-ab60-6e153b0848cc"
+    "clientSecret":  "<password>",
+    "subscriptionId":  "<subscriptionId>",
+    "tenantId":  "<tenant>",
+    "clientId":  "<appId>"
 }
 ```
 
